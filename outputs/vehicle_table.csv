@@ -1,0 +1,8 @@
+plate,license_number,violation_count,county_registered
+PLT100,LIC100,5,Kings
+PLT200,LIC200,3,Queens
+PLT300,LIC300,3,Bronx
+PLT400,LIC400,1,Nassau
+PLT500,LIC500,2,Richmond
+PLT600,LIC600,2,Suffolk
+PLT700,LIC700,1,New York

@@ -52,6 +52,31 @@ The goal of this hackathon is to simulate the creation of an end to end data man
 - Warning systems for those that are just below the threshold and about to commit the violation
 - Only send list of plates and drivers that are new and triggered the threshold
 6. Presentation: Audience are technocrats for legislative processes and policy staff members
+
+## Quickstart: running the lightweight ISA monitoring pipeline
+The repository now includes a self-contained pipeline that ingests historical and incremental ticket files, de-duplicates them, computes driver/vehicle roll-ups, and emits dashboard/CSV/email artifacts.
+
+1. Install dependencies (in a virtual environment):
+   ```bash
+   pip install -r <(python - <<'PY'
+from pathlib import Path
+import tomllib
+deps = tomllib.loads(Path('pyproject.toml').read_text())['project']['dependencies']
+print('\n'.join(deps))
+PY
+)
+   ```
+2. Populate `data/historical_tickets.csv` and `data/updates_tickets.csv` using the provided sample schema (`ticket_id,driver_id,license_number,plate,violation_type,violation_date,county`). Example seed files live in `data/`.
+3. Run the end-to-end flow:
+   ```bash
+   python -m src.isa_pipeline
+   ```
+4. Review outputs in `outputs/`:
+   - `drivers_table.csv` and `vehicle_table.csv` hold the required roll-ups and counts.
+   - `triggered_*.csv` contain cohort members crossing ISA thresholds; `warning_*.csv` captures near-misses.
+   - `newly_flagged_*.csv` list only net-new drivers/plates relative to the previous run; the persisted `alert_state.csv` tracks history.
+   - `dashboard.html` provides a lightweight visual summary, and `outputs/emails/*.eml` captures the email payloads with CSV attachments for violators, vendors, and the DMV.
+
   
 BONUS: 
 - Create small database files for the offenders (bonus)
