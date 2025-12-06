@@ -1,0 +1,33 @@
+To: violator@example.com
+From: alerts@isa.example
+Subject: ISA Alert: New drivers and plates triggering thresholds
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3476622322491182406=="
+
+--===============3476622322491182406==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+New drivers: 0 | New plates: 0 | Run anchor: 2025-03-10
+Attached are the latest CSV exports for new threshold crossings. Warning coho=
+rts are available in the dashboard output.
+
+--===============3476622322491182406==
+Content-Type: text/csv
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="newly_flagged_drivers.csv"
+MIME-Version: 1.0
+
+bGljZW5zZV9udW1iZXIscG9pbnRzX2xhc3RfMjRtLHZpb2xhdGlvbnNfbGFzdF8yNG0sbGFzdF92
+aW9sYXRpb25fZGF0ZSxsYXN0X3Zpb2xhdGlvbl9tb250aAo=
+
+--===============3476622322491182406==
+Content-Type: text/csv
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="newly_flagged_plates.csv"
+MIME-Version: 1.0
+
+cGxhdGUsbGljZW5zZV9udW1iZXIsdGlja2V0c19sYXN0XzEybSxsYXN0X3Zpb2xhdGlvbl9kYXRl
+LGxhc3RfdmlvbGF0aW9uX21vbnRoCg==
+
+--===============3476622322491182406==--

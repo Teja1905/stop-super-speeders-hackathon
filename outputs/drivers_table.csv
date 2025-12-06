@@ -1,0 +1,8 @@
+license_number,violation_types,violation_count,violation_points,county_registered
+LIC100,Red Light; Speeding - 21 to 30 MPH over posted limit; Speeding - 11 to 20 MPH over posted limit; Speeding - 31 to 40 MPH over posted limit,5,29,Kings
+LIC200,Speeding - 11 to 20 MPH over posted limit; Speeding - 31 to 40 MPH over posted limit,3,16,Queens
+LIC300,Red Light; Speeding - 21 to 30 MPH over posted limit,3,12,Bronx
+LIC400,Reckless driving,1,5,Nassau
+LIC500,Speeding - 21 to 30 MPH over posted limit; Speeding - 1 to 10 MPH over posted limit,2,9,Richmond
+LIC600,Speeding - 11 to 20 MPH over posted limit; Speeding - 21 to 30 MPH over posted limit,2,10,Suffolk
+LIC700,Speeding - Over 40 MPH over posted limit,1,11,New York

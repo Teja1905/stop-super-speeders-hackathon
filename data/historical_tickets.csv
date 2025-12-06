@@ -1,0 +1,11 @@
+ticket_id,driver_id,license_number,plate,violation_type,violation_date,county
+1,DRV1,LIC100,PLT100,Speeding - 21 to 30 MPH over posted limit,2023-05-14,Kings
+2,DRV2,LIC200,PLT200,Speeding - 11 to 20 MPH over posted limit,2023-07-09,Queens
+3,DRV3,LIC300,PLT300,Red Light,2024-02-20,Bronx
+4,DRV1,LIC100,PLT100,Speeding - 11 to 20 MPH over posted limit,2024-09-01,Kings
+5,DRV2,LIC200,PLT200,Speeding - 31 to 40 MPH over posted limit,2024-11-12,Queens
+6,DRV4,LIC400,PLT400,Reckless driving,2024-10-05,Nassau
+7,DRV5,LIC500,PLT500,Speeding - 1 to 10 MPH over posted limit,2023-11-20,Richmond
+8,DRV5,LIC500,PLT500,Speeding - 21 to 30 MPH over posted limit,2024-03-15,Richmond
+9,DRV1,LIC100,PLT100,Red Light,2024-12-02,Kings
+10,DRV6,LIC600,PLT600,Speeding - 11 to 20 MPH over posted limit,2024-11-25,Suffolk

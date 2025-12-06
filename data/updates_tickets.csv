@@ -1,0 +1,9 @@
+ticket_id,driver_id,license_number,plate,violation_type,violation_date,county
+11,DRV1,LIC100,PLT100,Speeding - 31 to 40 MPH over posted limit,2025-01-15,Kings
+12,DRV2,LIC200,PLT200,Speeding - 11 to 20 MPH over posted limit,2025-02-10,Queens
+13,DRV3,LIC300,PLT300,Speeding - 21 to 30 MPH over posted limit,2024-12-10,Bronx
+14,DRV3,LIC300,PLT300,Red Light,2025-01-20,Bronx
+15,DRV6,LIC600,PLT600,Speeding - 21 to 30 MPH over posted limit,2025-03-01,Suffolk
+16,DRV7,LIC700,PLT700,Speeding - Over 40 MPH over posted limit,2025-03-10,New York
+17,DRV1,LIC100,PLT100,Speeding - 31 to 40 MPH over posted limit,2025-01-15,Kings
+2,DRV2,LIC200,PLT200,Speeding - 11 to 20 MPH over posted limit,2023-07-09,Queens

@@ -1,0 +1,208 @@
+
+    <html>
+    <body>
+    
+    <h1>ISA Threshold Monitoring</h1>
+    <p>Run date anchor: 2025-03-10</p>
+    <ul>
+        <li>Total drivers triggering 11+ points in last 24 months: 4</li>
+        <li>Total plates triggering 16+ tickets in last 12 months: 0</li>
+        <li>Drivers triggered in November (last 24 months window): 0</li>
+        <li>Plates triggered in November (last 12 months window): 0</li>
+    </ul>
+    <h2>Drivers table</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>license_number</th>
+      <th>violation_types</th>
+      <th>violation_count</th>
+      <th>violation_points</th>
+      <th>county_registered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LIC100</td>
+      <td>Red Light; Speeding - 21 to 30 MPH over posted limit; Speeding - 11 to 20 MPH over posted limit; Speeding - 31 to 40 MPH over posted limit</td>
+      <td>5</td>
+      <td>29</td>
+      <td>Kings</td>
+    </tr>
+    <tr>
+      <td>LIC200</td>
+      <td>Speeding - 11 to 20 MPH over posted limit; Speeding - 31 to 40 MPH over posted limit</td>
+      <td>3</td>
+      <td>16</td>
+      <td>Queens</td>
+    </tr>
+    <tr>
+      <td>LIC300</td>
+      <td>Red Light; Speeding - 21 to 30 MPH over posted limit</td>
+      <td>3</td>
+      <td>12</td>
+      <td>Bronx</td>
+    </tr>
+    <tr>
+      <td>LIC400</td>
+      <td>Reckless driving</td>
+      <td>1</td>
+      <td>5</td>
+      <td>Nassau</td>
+    </tr>
+    <tr>
+      <td>LIC500</td>
+      <td>Speeding - 21 to 30 MPH over posted limit; Speeding - 1 to 10 MPH over posted limit</td>
+      <td>2</td>
+      <td>9</td>
+      <td>Richmond</td>
+    </tr>
+    <tr>
+      <td>LIC600</td>
+      <td>Speeding - 11 to 20 MPH over posted limit; Speeding - 21 to 30 MPH over posted limit</td>
+      <td>2</td>
+      <td>10</td>
+      <td>Suffolk</td>
+    </tr>
+    <tr>
+      <td>LIC700</td>
+      <td>Speeding - Over 40 MPH over posted limit</td>
+      <td>1</td>
+      <td>11</td>
+      <td>New York</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Vehicle table</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>plate</th>
+      <th>license_number</th>
+      <th>violation_count</th>
+      <th>county_registered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PLT100</td>
+      <td>LIC100</td>
+      <td>5</td>
+      <td>Kings</td>
+    </tr>
+    <tr>
+      <td>PLT200</td>
+      <td>LIC200</td>
+      <td>3</td>
+      <td>Queens</td>
+    </tr>
+    <tr>
+      <td>PLT300</td>
+      <td>LIC300</td>
+      <td>3</td>
+      <td>Bronx</td>
+    </tr>
+    <tr>
+      <td>PLT400</td>
+      <td>LIC400</td>
+      <td>1</td>
+      <td>Nassau</td>
+    </tr>
+    <tr>
+      <td>PLT500</td>
+      <td>LIC500</td>
+      <td>2</td>
+      <td>Richmond</td>
+    </tr>
+    <tr>
+      <td>PLT600</td>
+      <td>LIC600</td>
+      <td>2</td>
+      <td>Suffolk</td>
+    </tr>
+    <tr>
+      <td>PLT700</td>
+      <td>LIC700</td>
+      <td>1</td>
+      <td>New York</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Triggered drivers (11+ points / 24 months)</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>license_number</th>
+      <th>points_last_24m</th>
+      <th>violations_last_24m</th>
+      <th>last_violation_date</th>
+      <th>last_violation_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LIC100</td>
+      <td>29</td>
+      <td>5</td>
+      <td>2025-01-15</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>LIC300</td>
+      <td>12</td>
+      <td>3</td>
+      <td>2025-01-20</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>LIC200</td>
+      <td>16</td>
+      <td>3</td>
+      <td>2025-02-10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>LIC700</td>
+      <td>11</td>
+      <td>1</td>
+      <td>2025-03-10</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Triggered plates (16+ tickets / 12 months)</h2>
+    <p>No records.</p>
+    <h2>Warning drivers (9-10 points)</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>license_number</th>
+      <th>points_last_24m</th>
+      <th>violations_last_24m</th>
+      <th>last_violation_date</th>
+      <th>last_violation_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LIC500</td>
+      <td>9</td>
+      <td>2</td>
+      <td>2024-03-15</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>LIC600</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2025-03-01</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Warning plates (14-15 tickets)</h2>
+    <p>No records.</p>
+    
+    </body>
+    </html>
+    
